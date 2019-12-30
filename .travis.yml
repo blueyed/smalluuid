@@ -8,7 +8,7 @@ python:
 install:
   - "python setup.py develop"
   - "pip install ."
-  - "pip install pytest coveralls"
+  - "pip install -U pytest coveralls"
 script:
   coverage run --source=smalluuid runtests.py
 after_success:
